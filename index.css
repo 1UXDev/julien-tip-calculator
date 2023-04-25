@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 600px;
+  margin: 0px auto;
+  min-width: 400px;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 2em;
+}
+
+h2 {
+  width: 100%;
+}
+
+section * {
+  margin-bottom: 24px;
+}
+
+section:nth-child(2n) {
+  background-color: rgb(200, 230, 230);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+fieldset {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  border: unset;
+}
+input[type="radio"] + label {
+  color: #000000;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  padding: 24px;
+  background-color: white;
+  cursor: pointer;
+  margin: -6px;
+}
+
+fieldset label:active {
+  background-color: rgb(235, 235, 235);
+}
+
+fieldset label::selection {
+  border: 3px solid black;
+}
+
+section#result {
+  display: none;
+}
+
+section#result.show {
+  display: block;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+h3:after {
+  content: "€";
+}

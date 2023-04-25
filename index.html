@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="text/javascript" src="index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>A simple Tip Calculator</h1>
+    </header>
+    <hr />
+    <main>
+      <section id="gross">
+        <h2>What did the meal cost?</h2>
+        <label for="grossAmount">Type the price in Euros (€)</label>
+        <input type="text" id="grossAmount" name="grossAmount" />
+      </section>
+      <section id="tip">
+        <h2>How much Tip do you want to add?</h2>
+        <fieldset>
+          <input type="radio" id="t5" name="tip" value="5%"/>
+          <label for="t5">5%</label><br />
+          <input type="radio" id="t10" name="tip" value="10%" />
+          <label for="t10">10%</label><br />
+          <input type="radio" id="t15" name="tip" value="15%" />
+          <label for="t15">15%</label><br />
+          <input type="radio" id="t20" name="tip" value="20%" />
+          <label for="t20">20%</label><br />
+        </fieldset>
+      </section>
+      <section id="result">
+        <h2>The overall amount is</h2>
+        <h3 id="overallPrice"></h3>
+      </section>
+    </main>
+  </body>
+</html>
